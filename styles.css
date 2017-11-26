@@ -1,0 +1,57 @@
+li {
+  list-style: none;
+}
+.healthbar-container {
+  width: 250px;
+  height: 40px;
+  background-color: gray;
+}
+.healthbar {
+  width: 100%;
+  height: 100%;
+  background-color: green;
+}
+.player {
+  width: 40%;
+  float: left;
+  margin-right: 20px;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+.player h1 {
+  margin-left: 25%;
+  color: black;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.attacks-box {
+  min-height: 100px;
+  width: 73%;
+  background: gray;
+  clear: both;
+  border-top: 20px solid #ffffff;
+  color: white;
+  text-transform: uppercase;
+}
+#buttons {
+  clear: both;
+  border-top: 10px solid #ffffff;
+}
+#buttons button {
+  display: inline;
+  padding: 15px;
+  color: white;
+  background: blue;
+  margin-right: 10.33%;
+  border: none;
+  text-transform: uppercase;
+}
+#player-damage {
+  display: inline;
+  margin-right: 10px;
+  font-size: 1.1em;
+  margin-left: 33%;
+}

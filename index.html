@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://unpkg.com/vue@2.5.8/dist/vue.js"></script>
+    <link href="./styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+
+            <div class="player" v-for="player in players">
+                <h1>
+                    {{player.name}}
+                </h1>
+                <div class="healthbar-container">
+                    <div class="healthbar" :style="{width: player.health + '%'}">
+                        <div>
+                            {{player.health}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="buttons">
+                <button @click="castAttack(), checkHealth()">
+                    Attack
+                </button>
+                <button @click="castSpecial(), checkHealth()">
+                    Special
+                </button>
+                <button @click="castHeal()">
+                    Heal
+                </button>
+                <button @click="forfeit()">
+                    Forfeit
+                </button>
+            </div>
+            <div class="attacks-box">
+                <p :style="{color: attack.color}" v-for="attack in attacks" id="player-damage">
+                    {{attack.name}} does {{attack.damage}} {{attack.type}}!
+                    </br>
+                </p>
+                </br>
+            </div>
+        </div>
+
+    </div>
+    <script src="./vue.js"></script>
+</body>
+
+</html>
